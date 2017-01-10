@@ -1,5 +1,14 @@
-## Zazu Template
+## Zazu Docker
+Run docker command direct from Zazu
 
-[![Build Status](https://travis-ci.org/tinytacoteam/zazu-template.svg?branch=master)](https://travis-ci.org/tinytacoteam/zazu-template)
+## Installing
 
-Zazu Template for starting your own plugin.
+Add the package to your plugins array in `./zazurc.json`.
+
+~~~ json
+"nantaphop/zazu-docker"
+~~~
+
+# Usage
+Just type docker command like `docker start mysql` or `docker stop mysql`
+

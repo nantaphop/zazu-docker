@@ -1,31 +1,32 @@
 {
-  "name": "zazu-template",
+  "name": "zazu-docker",
   "version": "1.0.0",
-  "description": "Zazu Template for starting your own plugin.",
+  "description": "Zazu's plugin to run docker cmd from zazu",
   "blocks": {
     "input": [
       {
-        "id": "template",
-        "type": "Keyword",
-        "keyword": "template",
-        "title": "Zazu Template",
-        "subtitle": "Goto Zazu Template GitHub Repo",
-        "icon": "fa-files-o",
-        "connections": [
-          "GoHome"
-        ]
-      },
-      {
-        "id": "hello",
+        "id": "term",
         "type": "RootScript",
-        "script": "src/hello.js"
+        "script": "docker.js",
+        "connections": [
+          "process"
+        ]
       }
     ],
     "output": [
       {
-        "id": "GoHome",
-        "type": "OpenInBrowser",
-        "url": "https://github.com/tinytacoteam/zazu-template"
+        "id": "process",
+        "type": "UserScript",
+        "script": "process.js",
+        "connections": [
+          "Notify"
+        ]
+      },
+      {
+        "id": "Notify",
+        "type": "SendNotification",
+        "title": "Docker",
+        "message": "{value}"
       }
     ]
   }

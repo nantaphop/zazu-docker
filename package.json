@@ -1,11 +1,12 @@
 {
-  "name": "zazu-template",
+  "name": "zazu-docker",
   "version": "1.0.0",
-  "description": "Zazu Template for starting your own plugin.",
+  "description": "Zazu's plugin to run docker cmd from zazu",
   "main": "zazu.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha ./test"
+    "test": "mocha ./test",
+    "postinstall": "npm install node-notifier"
   },
   "license": "Unlicense",
   "devDependencies": {
@@ -15,5 +16,7 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "mocha": "^2.5.3"
+  },
+  "dependencies": {
   }
 }
