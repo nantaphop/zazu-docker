@@ -1,7 +1,7 @@
 ## Zazu Docker
 Run docker command direct from Zazu
 
-## Suport OS
+## Supported OS
 Currently Support only MacOS. Pull request for support windows and linux are welcome.
 
 ## Installing
