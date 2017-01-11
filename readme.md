@@ -1,6 +1,9 @@
 ## Zazu Docker
 Run docker command direct from Zazu
 
+## Suport OS
+Currently Support only MacOS. Pull request for support windows and linux are welcome.
+
 ## Installing
 
 Add the package to your plugins array in `./zazurc.json`.
